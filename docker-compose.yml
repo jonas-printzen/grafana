@@ -1,0 +1,9 @@
+services:
+  cxx:
+    environment:
+      - THIS_IMAGE=pzen/grafana
+    image: pzen/grafana
+    build:
+      context: .
+      args:
+      - IMG_TAG=pzen/grafana
